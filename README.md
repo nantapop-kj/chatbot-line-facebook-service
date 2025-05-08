@@ -2,7 +2,7 @@
 This project is a simple chatbot built with **Express.js** that integrates with a **Large Language Model (LLM)** API (such as Mistral or GPT) to automatically respond to user messages on **LINE**.
 
 ## Features
-your_local_pathLINE Messaging API integration  
+LINE Messaging API integration  
 - Handles and responds to user text messages  
 - Sends messages to an LLM API and returns AI-generated replies  
 - Clean TypeScript structure with interfaces and error handling
