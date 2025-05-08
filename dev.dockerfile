@@ -10,8 +10,6 @@ COPY . .
 
 RUN npm install
 
-# RUN npx prisma generate
-
 EXPOSE 3001
 
 ENTRYPOINT [ "bash" ]
