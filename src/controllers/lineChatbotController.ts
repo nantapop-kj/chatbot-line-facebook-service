@@ -11,7 +11,7 @@ import { fetchLLMResult } from "../utils/fetchLLMResult"
 import dotenv from "dotenv"
 dotenv.config()
 
-export interface SendLineMessageResponse {
+interface SendLineMessageResponse {
   status: "ok"
   data: (void | MessageAPIResponseBase)[]
 }

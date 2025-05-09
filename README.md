@@ -1,12 +1,15 @@
 # LINE And Facebook Chatbot with LLM Integration
-This project is a simple chatbot built with **Express.js** that integrates with a **Large Language Model (LLM)** API (such as Mistral or GPT) to automatically respond to user messages on **LINE**.
+This project is a simple chatbot built with **Express.js** that integrates with a **Large Language Model (LLM)** API (such as Mistral or GPT) to automatically respond to user messages on **LINE** and **Facebook Messenger**.
 
 ## Features
-LINE Messaging API integration  
-- Handles and responds to user text messages  
-- Sends messages to an LLM API and returns AI-generated replies  
-- Clean TypeScript structure with interfaces and error handling
-- Docker-ready for development
+- **LINE Messaging API integration**  
+  - Handles and responds to user text messages on LINE  
+  - Sends messages to an LLM API and returns AI-generated replies
+- **Facebook Messenger integration**  
+  - Handles and responds to user text messages on Facebook Messenger  
+  - Sends messages to an LLM API and returns AI-generated replies
+- Clean **TypeScript** structure with interfaces and error handling
+- **Docker-ready** for development
   
 ## Environment Variables
 Create a `.env` file in the root directory and add the following:
@@ -14,6 +17,8 @@ Create a `.env` file in the root directory and add the following:
   PORT=3001
   LINE_CHANNEL_SECRET=your_line_channel_secret
   LINE_CHANNEL_ACCESS_TOKEN=your_line_channel_access_token
+  FB_PAGE_ACCESS_TOKEN=your_fb_access_token
+  FB_VERIFY_TOKEN=your_fb_verify_token
   LLM_API_KEY=your_llm_api_key
   LLM_API_URL=https://your-llm-api-endpoint
   LLM_MODEL_NAME=your_model_name

@@ -1,8 +1,6 @@
 import { Router } from "express"
 import { middleware } from "@line/bot-sdk"
 import { sendLineMeassage } from "../controllers/lineChatbotController"
-import dotenv from "dotenv"
-dotenv.config()
 
 const router = Router()
 

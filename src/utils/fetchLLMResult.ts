@@ -25,6 +25,7 @@ export async function fetchLLMResult(message: string): Promise<string> {
     ) {
       throw new Error("No choices returned from API")
     }
+    
     // You may need to update this if the model returns differently structured responses
     return response.data.choices[0].message.content.trim()
   } catch (error) {
