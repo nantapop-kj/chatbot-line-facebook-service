@@ -1,5 +1,5 @@
-# LINE And Facebook Chatbot with LLM Integration
-This project is a simple chatbot built with **Express.js** that integrates with a **Large Language Model (LLM)** API (such as Mistral or GPT) to automatically respond to user messages on **LINE** and **Facebook Messenger**.
+# Chatbot LINE & Facebook Service with LLM Integration
+This project is a **microservice** built with **Express.js** that integrates with a **Large Language Model (LLM)** API (such as Mistral or GPT) to automatically respond to user messages on **LINE** and **Facebook Messenger**.
 
 ## Features
 - **LINE Messaging API integration**  
@@ -15,13 +15,13 @@ This project is a simple chatbot built with **Express.js** that integrates with 
 Create a `.env` file in the root directory and add the following:
   ```bash
   PORT=3001
-  LINE_CHANNEL_SECRET=your_line_channel_secret
-  LINE_CHANNEL_ACCESS_TOKEN=your_line_channel_access_token
-  FB_PAGE_ACCESS_TOKEN=your_fb_access_token
-  FB_VERIFY_TOKEN=your_fb_verify_token
-  LLM_API_KEY=your_llm_api_key
-  LLM_API_URL=https://your-llm-api-endpoint
-  LLM_MODEL_NAME=your_model_name
+  LINE_CHANNEL_SECRET={your_line_channel_secret}
+  LINE_CHANNEL_ACCESS_TOKEN={your_line_channel_access_token}
+  FB_PAGE_ACCESS_TOKEN={your_fb_access_token}
+  FB_VERIFY_TOKEN={your_fb_verify_token}
+  LLM_API_KEY={your_llm_api_key}
+  LLM_API_URL={https://your-llm-api-endpoint}
+  LLM_MODEL_NAME={your_model_name}
  ```
 
 ## How to Run
@@ -43,8 +43,8 @@ Copy the generated HTTPS URL and paste it into your [LINE Developers](https://de
 
 ## Docker (Development)
   ```bash
-  docker build -f dev.dockerfile -t line-fb-chatbot-demo-api .
+  docker build -f dev.dockerfile -t chatbot-line-facebook-service .
  ```
   ```bash
-  docker run -p 3001:3001 --env-file {your_local_path} line-fb-chatbot-demo-api
+  docker run -p 3001:3001 --env-file {your_local_path} chatbot-line-facebook-service
  ```
