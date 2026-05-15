@@ -43,8 +43,8 @@ Copy the generated HTTPS URL and paste it into your [LINE Developers](https://de
 
 ## Docker (Development)
   ```bash
-  docker build -f dev.dockerfile -t chatbot-line-facebook-service .
+  docker build -t chatbot-line-facebook-service .
  ```
   ```bash
-  docker run -p 3001:3001 --env-file {your_local_path} chatbot-line-facebook-service
+  docker run -d --name chatbot-line-facebook-servic -p 3001:3001 --env-file {your_local_path} -v $(pwd):/app chatbot-line-facebook-service
  ```
