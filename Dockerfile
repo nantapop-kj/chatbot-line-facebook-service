@@ -2,7 +2,7 @@ FROM node:26.13.1-alpine
 
 WORKDIR /app
 
-COPY client/package*.json ./
+COPY package*.json ./
 
 RUN npm ci
 
