@@ -6,6 +6,6 @@ COPY package*.json ./
 
 RUN npm ci
 
-EXPOSE 3000
+EXPOSE 3001
 
 CMD ["sleep", "infinity"]
