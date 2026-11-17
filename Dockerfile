@@ -1,15 +1,11 @@
-FROM node:20.10.0
+FROM node:26.13.1-alpine
 
 WORKDIR /app
 
-COPY package*.json ./
+COPY client/package*.json ./
 
-COPY .env .env
+RUN npm ci
 
-COPY . .
+EXPOSE 3000
 
-RUN npm install
-
-EXPOSE 3001
-
-ENTRYPOINT [ "bash" ]
+CMD ["sleep", "infinity"]
